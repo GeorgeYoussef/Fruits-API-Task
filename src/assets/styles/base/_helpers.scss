@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+.v-application a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .mianTitleResposive{
+        font-size: 1.8rem!important;
+    }
+}

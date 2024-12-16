@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains fonts styles.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('~@/assets/styles/base/fonts/Poppins-Regular.eot');
+    src: url('~@/assets/styles/base/fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url("~@/assets/styles/base/fonts/Poppins-Regular.ttf") format("truetype"),
+        url('~@/assets/styles/base/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('~@/assets/styles/base/fonts/Poppins-Regular.woff') format('woff'),
+        url('~@/assets/styles/base/fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

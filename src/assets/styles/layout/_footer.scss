@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.sectionOne {
+    background-color: #F0F0F0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    .fHeader {
+        color: $color-white;
+        font-size: 1.1rem;
+    }
+
+    //new footer section
+    .conEachFooterSec {
+        .headerSec {
+            color: $color-primary;
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .eachLinkFooter {
+            color: $color-secondary;
+            font-size: 12px;
+            padding: 0;
+            min-height: 24px;
+            height: 24px;
+            min-width: auto;
+        }
+
+    }
+    .v-btn:not(.v-btn--round).v-size--default.subscibeBtnFormFooter {
+        background: $color-secondary !important;
+        color: $color-white !important;
+        border-radius: 4px !important;
+        height: 40px !important;
+        margin-left: 15px;
+        span {
+            font-size: .625rem;
+        }
+    }
+    .conOFLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resImg {
+        max-width: 45%;
+        height: auto;
+    }
+
+    .btnContainer {
+        a {
+            min-width: 55px;
+
+            i.v-icon.iconTxt--text {
+                color: $color-primary;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot {
+        box-shadow: initial;
+        border: 1px solid $color-secondary;
+    }
+    .v-text-field.v-text-field--solo .v-input__control {
+        min-height: 40px;
+    }
+
+    .headerSecForm {
+        color: $color-primary;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .theme--light.v-btn--active:before,
+    .theme--light.v-btn--active:hover:before {
+        opacity: 0;
+    }
+
+
+}
+
+.sectionTwo {
+    background-color: $color-text-grayE5;
+
+    .footerCopyright {
+        color: $color-primary;
+        font-size: .86rem;
+        font-weight: bold;
+    }
+
+
+}
+

@@ -1,0 +1,46 @@
+    table {
+        thead.v-data-table-header {
+            th {
+                span {
+                    color: $color-text-primary;
+                    font-size: .875rem!important;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                }
+
+            }
+
+        }
+
+        tbody {
+            tr {
+                td {
+                    color: $color-text-primary;
+                    font-size: .875rem!important;
+                }
+            }
+        }
+    }
+
+    .theme--light.v-data-table {
+        border-radius: 0;
+    }
+
+    button.v-icon.v-icon--link.mdi.mdi-delete {
+        color: $color-primary;
+        font-size: 21px!important;
+    }
+
+    button.v-icon.v-icon--link.mdi.mdi-pencil {
+        color: $color-text-grayFC;
+        font-size: 21px!important;
+    }
+
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr>th,
+    .v-data-table>.v-data-table__wrapper>table>thead>tr>th,
+    .v-data-table>.v-data-table__wrapper>table>tfoot>tr>th,
+    .v-data-table>.v-data-table__wrapper>table>tbody>tr>td,
+    .v-data-table>.v-data-table__wrapper>table>thead>tr>td,
+    .v-data-table>.v-data-table__wrapper>table>tfoot>tr>td {
+        height: 75px!important;
+    }

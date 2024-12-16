@@ -1,0 +1,188 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.v-list-group.hidden-lg-and-up {
+  .v-list-group__header .v-list-item__icon.v-list-group__header__append-icon {
+    display: none;
+  }
+}
+
+.navbar.headerNavBar {
+  height: $height_menu !important;
+
+  .v-toolbar__content,
+  .v-toolbar__extension {
+    padding: 0.25rem 1.5rem;
+
+    .container-logo {
+      height: 100%;
+
+      img {
+        height: 50px;
+        margin-top: 10%;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 0 !important;
+      }
+    }
+
+    .v-toolbar__items {
+      .theme--light.v-btn.v-btn--has-bg {
+        font-size: .9rem;
+        height: $height_menu !important;
+        text-transform: capitalize;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0 10px;
+        letter-spacing: initial;
+
+        span {
+          color: $color-text-primary;
+        }
+
+        &.v-btn--active {
+          border-bottom: 1px solid $color-primary;
+          // font-weight: bold;
+
+          &:before {
+            opacity: 0;
+          }
+        }
+
+        &:hover {
+          color: darken($color: $color-text-primary, $amount: 30%);
+
+          &:before {
+            opacity: 0;
+          }
+        }
+      }
+
+      .addActive {
+        border-bottom: 1px solid $color-primary;
+
+      }
+    }
+  }
+
+}
+
+.v-menu__content.theme--light {
+  border-radius: 0;
+  .theme--light.v-list {
+    .v-list-item.v-list-item--link.theme--light {
+      &:hover:before,
+      &.v-item--active:before,
+      .v-list-item--active:hover:before,
+      .v-list-item:focus:before {
+        color: inherit;
+        opacity: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover,
+      &:not(.v-list-item--active):not(.v-list-item--disabled):hover {
+        color: $color-primary !important;
+      }
+    }
+  }
+}
+
+aside.v-navigation-drawer {
+  .v-list-group {
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    .v-btn:not(.v-btn--round).v-size--default {
+      min-width: 60%;
+
+      .v-list-item__title,
+      .v-list-item__subtitle {
+        text-align: left;
+      }
+    }
+  }
+
+  .v-list {
+    .v-list-item.v-list-item--link {
+      color: $color-text-primary !important;
+      min-height: 40px;
+
+      &.v-list-item--active {
+        background: rgba(180, 15, 31, 0.05);
+      }
+    }
+  }
+
+  .v-list-group__items {
+    padding-left: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .v-list-item {
+      min-height: 30px;
+
+      .v-list-item__content {
+        padding: 7px 0;
+
+        .v-list-item__title {
+          font-size: .9rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+  }
+
+  .v-list-group__header.v-list-item.v-list-item--link {
+    padding: 0;
+  }
+
+  .v-btn:not(.v-btn--round).v-size--default {
+    min-height: 50px;
+    border-radius: 0;
+
+    &.singleItem {
+      min-width: 100% !important;
+    }
+  }
+
+  a.v-btn--active.v-btn.v-btn--router {
+    background: rgba(180, 15, 31, 0.05);
+  }
+}
+
+.v-list {
+  padding: 0;
+
+  .conChildItem {
+    .v-list-item.v-list-item--link {
+      padding: .2rem 0;
+
+      .v-list-item__content {
+        padding: 0;
+
+        a {
+          text-transform: capitalize;
+          letter-spacing: initial;
+          &.v-btn--active {
+            background: rgba($color-primary, 0.05);
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.styleOfresposiveMenu {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}

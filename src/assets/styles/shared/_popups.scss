@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains shared component ==> popups / dialogs component style
+// -----------------------------------------------------------------------------
+
+.conOfPopup {
+  .v-card__title {
+      border-bottom: 1px solid #2159bf17;
+      margin: 0;
+      padding: 17px 35px!important;
+      margin-bottom: 12px;
+      .modalTitle {
+          color: #172B4D;
+          font-size: 1.5rem!important;
+          font-weight: bold;
+          
+      }
+  }
+
+}
+.conConfirmPopup {
+  .v-card__title {
+      border-bottom: 1px solid #2159bf17;
+      margin: 0 30px 15px 30px;
+      padding: 0;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      .modalTitle {
+          color: $color-secondary;
+          font-size: 1.5rem;
+          font-weight: bold;
+      }
+  }
+  .v-card__text.textConfirm {
+      color: $color-black;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      text-align: center;
+  }
+}

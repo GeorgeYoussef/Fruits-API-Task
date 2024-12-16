@@ -1,0 +1,96 @@
+// -----------------------------------------------------------------------------
+// This file contains forms styles.
+// -----------------------------------------------------------------------------
+
+.conFormSubmit {
+    .conDatePicker {
+        .v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot {
+            box-shadow: none;
+            background-color: transparent;
+            padding: 0;
+        }
+
+        .v-input.v-input--hide-details.v-input--is-readonly.theme--light.v-text-field.v-text-field--single-line.v-text-field--solo.v-text-field--is-booted.v-text-field--enclosed {
+            padding: 0 12px;
+            border: 1px solid #E7E6E9;
+            background-color: #fff;
+            box-shadow: none;
+            border-radius: 14px;
+
+        }
+    }
+    .v-text-field.v-text-field--solo .v-input__control {
+        min-height: 55px;
+    }
+    //style of outline select box
+
+    .v-text-field--outlined.v-input--is-focused fieldset,
+    .v-text-field--outlined.v-input--has-state fieldset,
+    .theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset {
+        border: 1px solid #E7E6E9;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 14px;
+    }
+
+    .v-text-field--filled>.v-input__control>.v-input__slot,
+    .v-text-field--full-width>.v-input__control>.v-input__slot,
+    .v-text-field--outlined>.v-input__control>.v-input__slot {
+        min-height: 55px;
+    }
+
+
+
+
+    .v-text-field--full-width .v-input__prepend-outer,
+    .v-text-field--full-width .v-input__prepend-inner,
+    .v-text-field--full-width .v-input__append-inner,
+    .v-text-field--full-width .v-input__append-outer,
+    .v-text-field--enclosed .v-input__prepend-outer,
+    .v-text-field--enclosed .v-input__prepend-inner,
+    .v-text-field--enclosed .v-input__append-inner,
+    .v-text-field--enclosed .v-input__append-outer {
+        margin-top: 13px;
+    }
+
+    .v-input__control .v-select__slot .primary--text {
+        color:#4B4279 !important;
+        caret-color: #4B4279 !important;
+    }
+
+    .v-input__icon {
+        height: 28px;
+    }
+
+
+    // label.v-label.theme--light {
+    //     color: rgb(83, 81, 81);
+    //     font-size: .8rem;
+    // }
+
+}
+
+
+//style of global date picker 
+.v-menu__content {
+    .v-picker.v-card.v-picker--date {
+        .primary {
+            background-color: $color-white !important;
+            border-color: $color-white !important;
+            color: gray;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+        }
+    }
+}
+
+.v-menu__content.theme--light {
+    z-index: 1001 !important;
+}
+.v-btn {
+    letter-spacing: normal!important;
+}
+.v-text-field.v-text-field--solo .v-input__control input {
+    font-size: 0.8rem;
+}

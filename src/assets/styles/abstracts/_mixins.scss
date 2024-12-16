@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@mixin max_xs {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+
+/*
+** prefixes mixins
+** auto prefixes  
+*/
+@mixin prefixer($property,$value,$prefixes: ()) {
+    @each $prefix in $prefixes {
+        // print them using interpolation 
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}

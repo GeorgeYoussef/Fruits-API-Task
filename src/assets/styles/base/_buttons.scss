@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains buttons styles.
+// -----------------------------------------------------------------------------
+
+.primaryBtn {
+  background-color: $color-primary !important;
+  border: 1px solid;
+  border-color: $color-primary !important;
+  font-size: 1rem !important;
+  border-radius: 40px;
+  min-width: 200px !important;
+  padding: 23px 0 !important;
+
+  &.loginBtn {
+    border-radius: 8px;
+    min-width: 135px !important;
+
+    span {
+      text-transform: uppercase;
+      font-weight: initial;
+
+    }
+  }
+
+  span {
+    color: $color_white;
+    font-weight: bold;
+    text-transform: initial;
+
+  }
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+    border-color: darken($color-primary, 5%);
+    color: $color_white;
+
+    span {
+      border-color: darken($color-primary, 5%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+      font-size: .8rem !important;
+      min-width: 150px !important;
+      padding: 20px 0 !important;
+  }
+}
+.textBtnRed {
+  background-color: transparent;
+  font-size: 1.125rem !important;
+  padding: 0!important;
+  span {
+      color: $color-primary;
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+
+  &:hover {
+      //   background-color: transparent;
+      color: darken($color-primary, 5%);
+
+      span {
+          color: darken($color-primary, 5%);
+      }
+  }
+}
+
+.btnDismissed {
+  background-color: $color-dismiss !important;
+  font-size: 1.125rem !important;
+  border: 1px solid;
+  border-color: $color-dismiss !important;
+  border-radius: 40px;
+  min-width: 150px !important;
+  padding: 20px 0 !important;
+  box-shadow: none;
+
+  span {
+      color: #8E8E8E;
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+
+  &:hover {
+      //   background-color: transparent;
+      background-color: darken($color-dismiss, 5%) !important;
+
+      span {}
+
+      background-color: darken($color-dismiss, 5%) !important;
+
+  }
+}
+.btnPrimarySubmit {
+  background-color: $color-primary !important;
+  font-size: 1.125rem !important;
+  border: 1px solid;
+  border-color: $color-primary !important;
+  border-radius: 40px;
+  min-width: 150px !important;
+  padding: 20px 0 !important;
+  box-shadow: none;
+
+  span {
+      color: $color-white;
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+
+  &:hover {
+      //   background-color: transparent;
+      background-color: darken($color-primary, 5%) !important;
+      border-radius: 40px;
+
+      span {
+          border-radius: 40px;
+
+          background-color: darken($color-primary, 5%) !important;
+      }
+
+  }
+}
