@@ -1,0 +1,98 @@
+@import "~@/assets/styles/abstracts/variables";
+
+.conOfEventItem {
+    .conOfHeader {
+        border-bottom: 2px solid $color-border-btm;
+        padding-bottom: .5rem;
+
+        .headerSec {
+            color: $color-text-gray125;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .eventShareBtn {
+            color: $color-primary;
+            font-size: .8rem;
+            font-weight: bold;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .conofcardSec {
+        .btnCon {
+            button.primaryBtn.bookNow.v-btn {
+                font-size: .75rem !important;
+                border-radius: 20px;
+                padding: 18px 0 !important;
+                width: 100%;
+
+                span {
+                    font-weight: initial;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .titleAgendaTxt {
+        color: $color-black;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+    }
+
+    .conTimeLine {
+        .v-timeline {
+            padding-top: 0;
+            margin-top: 35px;
+            position: relative;
+
+            .conOfTime {
+                position: absolute;
+                top: -20px;
+                left: 36px;
+
+                color: $color-primary;
+                font-size: .625rem;
+                font-weight: bold;
+
+            }
+
+            .v-timeline-item {
+                padding-bottom: 5px;
+
+                .conOfAgendaCont {
+                    border: 1px solid #E8E6FF;
+                    background: $color-white;
+                    padding: .8rem;
+                    margin-right: 1rem;
+
+                    .headerAgenda {
+                        color: $color-black;
+                        font-size: .75rem;
+                        font-weight: bold;
+                    }
+
+                    .descAgenda {
+                        color: $color-text-gray50;
+                        font-size: .625rem;
+                    }
+                }
+            }
+        }
+
+        .mrgLefMin {
+            margin-left: -30px;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.v-application a {
+    text-decoration: none;
+}
